@@ -39,7 +39,7 @@ const Navbar = () => {
                                 {item}
                             </a>
                         </li>
-            ))}
+                        ))}
                     </ul>
                     </motion.div>
                 )
