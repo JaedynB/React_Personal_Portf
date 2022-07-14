@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { HiMenuAlt4, HiX} from 'react-icons/hi';
 import { motion } from 'framer-motion';
 
 import './Navbar.scss';
 
-import {images} from '../../constants';
+import  { images } from '../../constants';
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
@@ -31,20 +31,22 @@ const Navbar = () => {
                         whileInView={{ x: [300, 0]}} 
                         transition={{ duration: 0.85, ease: 'easeOut' }}   
                     > 
-                    <hiX onClick= {() => setToggle(false)}/>
+                    <HiX onClick= {() => setToggle(false)}/>
                     <ul>
                         {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
                         <li key={item}> {/*p-text for centered text, app__flex for dynamic window resizing */}
-                            <a href={'#${item}'} onClick= {() => setToggle(false)}>{item}</a>
+                            <a href={'#${item}'} onClick= {() => setToggle(false)}>
+                                {item}
+                            </a>
                         </li>
-            ))}
+                        ))}
                     </ul>
                     </motion.div>
                 )
             }
         </div>
     </nav>
-  )
-}
+  );
+};
 
 export default Navbar;
