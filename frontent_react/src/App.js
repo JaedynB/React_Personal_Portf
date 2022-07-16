@@ -15,6 +15,7 @@ const App = () => {
         <Testimonial />
         <Footer />
       </div>
+      
   );
 }
 export default App;
