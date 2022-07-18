@@ -28,6 +28,7 @@
     align-items: flex-start;
 
     margin-right: 5rem;
+
     @media screen and (max-width: 900px) {
         margin-right: 0;
         justify-content: center;
@@ -42,14 +43,14 @@
 
     margin: 1rem;
 
-    transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     div
     {
         width: 90px;
         height: 90px;
         border-radius: 50%;
-        background-color: #fff;
+        background-color: #fef4f5;
 
         img
         {
@@ -67,9 +68,9 @@
             height: 150px;
         }
 
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: 450px) {
             width: 70px;
-            height: 700px;
+            height: 70px;
         }
     }
 
