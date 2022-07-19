@@ -14,7 +14,8 @@ const App = () => {
         <Skills />
         <Testimonial />
         <Footer />
-        </div>
+      </div>
+      
   );
 }
 export default App;

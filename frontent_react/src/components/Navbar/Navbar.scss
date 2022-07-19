@@ -6,7 +6,8 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 1rem 2rem;
+    //padding: 1rem 2rem;
+    paddding: 0.5rem 2rem;
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
@@ -23,13 +24,13 @@
 
     img 
     {
-        width: 90px;
-        height: 20px;
+        width: 80px;
+        height: 80px;
 
         @media screen and (min-width: 2000px) 
         {
-            width: 180px;
-            height: 40px;
+            width: 160px;
+            height: 160px;
         }
     }
 }

@@ -27,6 +27,7 @@ import profile from '../assets/profile.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
 import giraffe from '../assets/giraffe.jpeg'
+import ownlogo from '../assets/ownlogo.png'
 
 import adidas from '../assets/adidas.png';
 import amazon from '../assets/amazon.png';
@@ -71,4 +72,5 @@ export default {
   skype,
   spotify,
   giraffe,
+  ownlogo,
 };
