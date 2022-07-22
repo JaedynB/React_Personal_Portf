@@ -64,7 +64,7 @@ const Header = () => {
         className= "app__header-circles"
       >
         {[images.java, images.c, images.python].map((circle, index) => 
-          <div className= "circle-cmp app__flex" key={'circle-$(index)'}>
+          <div className= "circle-cmp app__flex" key={`circle-${index}`}>
             <img src={circle} alt="circle" />
           </div>
         )}
