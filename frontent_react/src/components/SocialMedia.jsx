@@ -1,21 +1,35 @@
 import React from 'react';
-import { BsTwitter, BsInstagram } from 'react-icons/bs';
-import { FaFacebookF } from 'react-icons/fa';
+import { BsLinkedin, BsInstagram, BsGithub } from 'react-icons/bs';
 
 const SocialMedia = () => {
   return (
     <div className = "app__social">
         <div>
-            <BsTwitter />
+          <button onClick={(e) => {
+            e.preventDefault();
+            window.location.href='https://www.linkedin.com/in/jaedyn-brown/';
+          }}>
+            <BsLinkedin />
+          </button>
         </div>
         <div>
-            <FaFacebookF />
+          <button onClick={(e) => {
+            e.preventDefault();
+            window.location.href='https://github.com/JaedynB';
+          }}>
+            <BsGithub />
+          </button>
         </div>
         <div>
+          <button onClick={(e) => {
+            e.preventDefault();
+            window.location.href='https://www.instagram.com/jaeddog/';
+          }}>
             <BsInstagram />
+          </button>
         </div>
     </div>
   )
-}
+};
 
 export default SocialMedia;
